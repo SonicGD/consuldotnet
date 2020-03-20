@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <VersionPrefix>0.7.2.6</VersionPrefix>
-    <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
+    <TargetFramework>netstandard1.3</TargetFramework>
     <AssemblyName>Consul</AssemblyName>
     <PackageId>Consul.GRPC</PackageId>
     <PackageTags>Consul;service discovery;distributed locking;health checking</PackageTags>
