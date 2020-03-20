@@ -15,9 +15,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-      env: 
-        NUGET_AUTH_TOKEN: ${{secrets.NUGET_TOKEN}}
     - name: Pack with dotnet
       run: dotnet pack --configuration Release -o $(pwd)/packages
     - name: Push to nuget
-      run: dotnet nuget push packages/*.nupkg --skip-duplicate --no-symbols true
+      run: dotnet nuget push packages/*.nupkg --skip-duplicate --no-symbols true -k ${{ secrets.NUGET_TOKEN }} -s https://nuget.org
