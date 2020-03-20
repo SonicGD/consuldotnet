@@ -249,6 +249,12 @@ namespace Consul
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string TCP { get; set; }
+        
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        public string GRPC { get; set; }
+        
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        public bool GRPCUseTLS  { get; set; }
 
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(HealthStatusConverter))]
