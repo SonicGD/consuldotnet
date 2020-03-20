@@ -20,4 +20,4 @@ jobs:
     - name: Pack with dotnet
       run: dotnet pack --configuration Release -o $(pwd)/packages
     - name: Push to nuget
-      run: nuget push packages/*.nupkg --skip-duplicate --no-symbols true
+      run: dotnet nuget push packages/*.nupkg --skip-duplicate --no-symbols true
