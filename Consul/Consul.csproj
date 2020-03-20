@@ -4,13 +4,13 @@
     <VersionPrefix>0.7.2.6</VersionPrefix>
     <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
     <AssemblyName>Consul</AssemblyName>
-    <PackageId>Consul</PackageId>
+    <PackageId>Consul.GRPC</PackageId>
     <PackageTags>Consul;service discovery;distributed locking;health checking</PackageTags>
-    <PackageReleaseNotes>https://github.com/PlayFab/consuldotnet/blob/master/CHANGELOG.md</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/PlayFab/consuldotnet</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/PlayFab/consuldotnet/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>https://github.com/SonicGD/consuldotnet/blob/master/CHANGELOG.md</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/SonicGD/consuldotnet</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/SonicGD/consuldotnet/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/PlayFab/consuldotnet</RepositoryUrl>
+    <RepositoryUrl>https://github.com/SonicGD/consuldotnet</RepositoryUrl>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.3' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
